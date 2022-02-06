@@ -168,6 +168,51 @@ footer {
 }
 }
 
+/*animaciones*/
+
+.granTitulo5 {
+    display: flex;
+    animation-name: granTitulo5;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    color: black;
+    animation-timing-function: cubic-bezier(.33,.2,.25,.85);
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+   }
+
+   @keyframes granTitulo5{
+      from{
+         transform: translate(-100px);
+         opacity: 0;
+      }
+      to{
+            transform: translate(0);
+            opacity: 1;
+
+      }
+   }
+
+/*Transiciones*/
+
+.ubicacion{
+      height: 200px;
+      width: 200px;
+}
+
+.ubicacion{
+      transition: width 2s , height 2s;
+
+}
+   .ubicacion:hover{
+      width: 50%;
+      height: 300px;
+
+   }
+
 /*Tablet*/
 
 @media ( min-width:481px) and ( max-width:1023px ){
